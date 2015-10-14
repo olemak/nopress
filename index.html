@@ -1,0 +1,307 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Forum' rel='stylesheet' type='text/css'>    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apasje | Digital</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+
+<!--    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/> -->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script> -->
+    <style>
+
+    html {overflow-y: scroll;}
+
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding-left: 1%;
+      background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.8));
+//      -webkit-background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+    }
+
+    #blocklist li {
+      padding-bottom: 0;
+    }
+
+    #blocklist img {
+        margin-bottom:-1rem;
+    }
+
+    #blocklist li:hover {
+        cursor:pointer;
+    }
+
+    .gallery dl {
+      float:left;
+    }
+
+    .gallery dd {
+      width: 10rem;
+      text-align: center;
+
+    }
+
+    #main {
+      font-family: 'Forum', cursive;
+      margin-bottom: 17rem;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Lobster', cursive;
+    }  
+
+    #main p{
+      font-size:    2rem;
+    }
+
+    #main h5 span, #main h5 a {
+      display: inline-block;
+      width: 12rem;
+    }
+
+    #main h5 a {
+      width: 6rem;
+    }
+
+    #royksignaler {
+      position: fixed;
+      right: 0;
+      top: 10%;
+      width: 20rem;
+      background: lightgrey;
+    }
+    #royksignaler li{
+      list-style-type: none;
+    //  display: flex;
+      min-height: 5rem;
+      padding: 0.5rem;
+    }
+    #royksignaler h5 {
+      display: inline-block;
+    }
+
+    #royksignaler img {
+      width: 5rem;
+      margin: 0.3rem;
+      position: absolute;
+      left: -5.6rem;
+      transform: scaleX(-1);
+      transition: transform 2s;
+    }
+
+    #top-menu p {
+      display: none;
+    }
+
+
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+@-webkit-keyframes slideOutDown {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+    </style>
+
+
+  </head>
+  <body>
+    
+    <header>
+    <div class="row">
+      <div class="columns small-12 medium-4">
+        <h1>Apasje</h1>
+      </div>
+      <div class="columns small-12 medium-8">
+        <ul class="button-group" id="top-menu">
+        </ul>
+      </div>
+    </div>
+    </header>
+    <section>
+
+      <div class="row">
+        <div class="columns small-12" id="main">
+
+          <h1>Webdesign, strategi, innhold og utvikling</h1>
+          <p>
+            Apasje er et lite og personlig digitalt byrå med kontorer i Oslo og Drammen, men med kunder over hele Norge (samt en del i utlandet).
+          </p>
+          <p>
+            Vi hjelper våre kunder hele veien, fra konsept og strategi til lansering og drift. Vi er designere, utviklere, rådgivere, strateger, kodere og innholdsprodusenter.
+          </p>
+
+        <div class="row">
+          <div class="columns small-12 medium-4">
+            <h5>Tollbugata 46</h5>
+            <h5>3043 Drammen</h5>
+          </div>
+          <div class="columns small-12 medium-8">
+              <h5><span>John Sætrang</span><a href="tel:48054018">4805&nbsp;4018</a><a href="mailto:john@apasje.no">john@apasje.no</a></h5>
+            <h5><span>Ole Martin Kristiansen</span><a href="tel:48054018">9261&nbsp;5622</a><a href="mailto:olemak@apasje.no">olemak@apasje.no</a></h5>
+
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <aside>
+      <ul id="royksignaler">
+      </ul>
+    </aside>
+
+  <footer>
+          <ul class="small-block-grid-3 medium-block-grid-9" id="blocklist">
+          </ul>
+  </footer>
+    <script src="js/apasje.js"></script>
+
+<script>
+    makeContentList ('http://localhost/apasje/wp-json/posts?type=page');
+    makeContentList ('http://localhost/apasje/wp-json/posts', 'blocklist', 'Arbeider');
+    makeContentList ('http://localhost/apasje/wp-json/posts?type=post', 'royksignaler', 'Røyksignaler (blog)');
+    exportedStuff('posts', 'royksignaler', 'Røyksignaler (blog)');
+  //  getPages();
+  // getPosts();
+  //  getRoyksignaler();
+</script>
+
+<!--
+    <script async src="js/vendor/jquery.js"></script>
+    <script async src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+-->
+  </body>
+</html>
